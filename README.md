@@ -8,7 +8,7 @@ Make sure there is a `auth.json` file in the root directory containing the follo
 
 ```json
 {
-    auth_token: "TITO_API_AUTH_TOKEN"
+    "auth_token": "TITO_API_AUTH_TOKEN"
 }
 ```
 
