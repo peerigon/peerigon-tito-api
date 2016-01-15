@@ -1,0 +1,19 @@
+{
+  "name": "peerigon-tito-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "DEBUG=peerigon-tito-api:* nodemon ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "moment": "^2.11.1",
+    "morgan": "~1.5.1",
+    "node-fetch": "^1.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
