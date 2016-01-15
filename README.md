@@ -2,7 +2,11 @@
 
 _Very simple_ layer to the ti.to api.
 
-## Usage
+## Installation / Usage
+
+1. `git clone git@github.com:peerigon/peerigon-tito-api.git`
+2. `cd peerigon-tito-api && npm install`
+3. `npm start`
 
 Make sure there is a `auth.json` file in the root directory containing the following contents:
 
