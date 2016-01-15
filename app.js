@@ -10,6 +10,11 @@ const app = express();
 
 app.use(logger('dev'));
 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
+
 app.use('/timeline', timeline);
 
 // catch 404 and forward to error handler
