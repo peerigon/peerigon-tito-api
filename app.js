@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 
-const timeline = require('./routes/timeline');
+const events = require('./routes/events');
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/timeline', timeline);
+app.use('/events', events);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

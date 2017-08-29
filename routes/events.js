@@ -6,12 +6,12 @@ const debug = require("debug")("peerigon-tito-api:routes")
 
 const auth = require("../auth.json");
 
-const fetchTimeline = require("../lib").fetchTimeline;
+const fetchEvents = require("../lib").fetchEvents;
 
 router.get('/', (req, res, next) => {
-    fetchTimeline(auth.api_token, "json")
-        .then((timeline) => {
-            res.json(timeline);
+    fetchEvents(auth.api_token)
+        .then((events) => {
+            res.json(events);
         })
         .catch(next);
 });
